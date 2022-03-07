@@ -24,7 +24,6 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User login(String email, String password) {
-        System.out.println("running");
         Session session = factory.openSession();
 
         CriteriaBuilder cb = session.getCriteriaBuilder();
