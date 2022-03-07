@@ -39,6 +39,7 @@ public class MyServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String cssTag="<link rel='stylesheet' type='text/css' href='css/style.css'>";
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
