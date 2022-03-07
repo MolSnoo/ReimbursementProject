@@ -6,20 +6,25 @@ import jakarta.persistence.*;
 @Table (name="User")
 public class User {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id")
     private int id;
     @Column(name="name")
     private String name;
     @Column(name="email")
     private String email;
+    @Column(name="password")
+    private String password;
     @Column(name="type")
     private String type;
 
-    public User(int id, String name, String email, String type) {
+    public User() {}
+
+    public User(int id, String name, String email, String password, String type) {
         this.id = id;
         this.name = name;
         this.email = email;
+        this.password = password;
         this.type = type;
     }
 
@@ -46,6 +51,8 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public void setPassword(String password) { this.password = password; }
 
     public String getType() {
         return type;
