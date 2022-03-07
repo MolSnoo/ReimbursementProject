@@ -1,9 +1,15 @@
 package com.revature;
 
 import jakarta.servlet.*;
-import java.io.IOException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
-public class MyServlet implements Servlet {
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class MyServlet extends HttpServlet {
     ServletConfig config;
 
     @Override
@@ -31,4 +37,20 @@ public class MyServlet implements Servlet {
     public void destroy() {
         System.out.println("going to destroy servlet object...");
     }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+
+        // getting the value from query string
+        String name = request.getParameter("name");
+        out.println("Welcome : "+ name);
+
+        HttpSession session = request.getSession();
+        session.setAttribute("uname", name);
+
+        out.println("<a href='EmpHome'>Click Here</a>");
+        out.close();
+    }
+
 }

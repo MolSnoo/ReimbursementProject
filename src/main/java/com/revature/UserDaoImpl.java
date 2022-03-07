@@ -24,13 +24,12 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User login(String email, String password) {
-        System.out.println("running");
         Session session = factory.openSession();
 
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<User> cq = cb.createQuery(User.class);
         Root<User> root = cq.from(User.class);
-        
+
         Predicate[] predicates = new Predicate[2];
         predicates[0] = cb.equal(root.get("email"), email);
         predicates[1] = cb.equal(root.get("password"), password);
