@@ -5,21 +5,28 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Employee Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400&display=swap');
+        body {
+        font-family: 'Fira Mono', monospace;
+        }
+    </style>
 </head>
 <body>
-  <h1>Employee Home Page</h1>
-  <input type="button" value="Submit a reimbursement request">
+  <h1 class="center">Employee Home Page</h1>
+  <input type="button" value="Submit a reimbursement request" class=".center">
   <br><br>
-  <input type="button" value="View pending reimbursement requests">
+  <input type="button" value="View pending reimbursement requests" class=".center">
   <br><br>
-  <input type="button" value="View resolved reimbursement requests">
+  <input type="button" value="View resolved reimbursement requests" class=".center">
   <br><br>
-  <input type="button" value="View your information">
+  <input type="button" value="View your information" class=".center">
   <br><br>
-  <input type="button" value="Update your information">
+  <input type="button" value="Update your information" class=".center">
   <br><br>
-  <form action="logout" method="get">
+  <form action="logout" method="get" class="center">
       <input type="submit" value="Logout">
   </form>
 </body>

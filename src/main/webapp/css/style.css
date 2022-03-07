@@ -1,0 +1,21 @@
+.center { text-align: center; }
+
+body { background-color: #F5EFDF; }
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-style: ridge;
+	border-spacing: 5px;
+	border-width: 3px;
+	border-radius: 2px;
+	border-color: #12921E;
+}
+
+a:hover {background: #2d2c7d; color: white}
+	
+.menu { text-align: center;  width: 60% } 
+
+.menuitem { text-align: center; width: 15% }
+
+.menupipe { width: 1% }
