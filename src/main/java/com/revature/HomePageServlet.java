@@ -12,16 +12,20 @@ import java.io.PrintWriter;
 public class HomePageServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
+        // Ensure that the page isn't cached so that the user can't access the wrong account type after logging out.
+        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1
+        response.setHeader("Pragma", "no-cache");   // HTTP 1.0
+        response.setDateHeader("Expires", 0);   // Proxies
         PrintWriter out = response.getWriter();
 
         HttpSession session = request.getSession(false);
         if (session != null) {
-            User user = (User) session.getAttribute("user");
-            if (user.getType().equals("EMPLOYEE")) {
+            String userType = (String) session.getAttribute("user_type");
+            if (userType.equals("EMPLOYEE")) {
                 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ehomepage.html");
                 dispatcher.forward(request, response);
             }
-            else if (user.getType().equals("MANAGER")) {
+            else if (userType.equals("MANAGER")) {
                 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/mhomepage.html");
                 dispatcher.forward(request, response);
             }

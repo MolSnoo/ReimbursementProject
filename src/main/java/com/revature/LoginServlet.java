@@ -21,13 +21,15 @@ public class LoginServlet extends HttpServlet {
         UserDao userDao = UserDaoFactory.getUserDao();
         User user = userDao.login(email, password);
         if (user == null) {
-            out.println("Email address or password is incorrect.");
+            out.println("<span style=\"color:red\">Email address or password is incorrect.</span>");
             RequestDispatcher rd = request.getRequestDispatcher("/loginpage.html");
-            rd.forward(request, response);
+            rd.include(request, response);
         }
         else {
             HttpSession session = request.getSession();
-            session.setAttribute("user", user);
+            session.setAttribute("user_id", user.getId());
+            session.setAttribute("user_name", user.getName());
+            session.setAttribute("user_type", user.getType());
             response.sendRedirect(request.getContextPath());
         }
         out.close();
