@@ -35,4 +35,24 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewInfoServlet</servlet-name>
+    <servlet-class>com.revature.ViewInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewInfoServlet</servlet-name>
+    <url-pattern>/viewinfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BackServlet</servlet-name>
+    <servlet-class>com.revature.BackServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>BackServlet</servlet-name>
+    <url-pattern>/backtohomepage</url-pattern>
+  </servlet-mapping>
 </web-app>

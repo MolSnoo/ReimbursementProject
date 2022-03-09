@@ -16,17 +16,27 @@
 </head>
 <body>
     <h1 class="center">Manager Home Page</h1>
-    <input type="button" value="Approve/Deny pending reimbursement requests">
+    <form action="approvedeny" method="get" class="center">
+        <input type="button" value="Approve/Deny pending reimbursement requests">
+    </form>
     <br><br>
-    <input type="button" value="View all pending requests of all employees">
+    <form action="viewpending" method="get" class="center">
+        <input type="button" value="View all pending requests of all employees">
+    </form>
     <br><br>
-    <input type="button" value="View all resolved requests of all employees">
+    <form action="viewresolved" method="get" class="center">
+        <input type="button" value="View all resolved requests of all employees">
+    </form>
     <br><br>
-    <input type="button" value="View reimbursement requests of a specific employee">
+    <form action="viewspecific" method="get" class="center">
+        <input type="button" value="View reimbursement requests of a specific employee">
+    </form>
     <br><br>
-    <input type="button" value="View all employees">
+    <form action="viewemployees" method="get" class="center">
+        <input type="button" value="View all employees">
+    </form>
     <br><br>
-    <form action="logout" method="get">
+    <form action="logout" method="get" class="center">
         <input type="submit" value="Logout">
     </form>
     </body>
