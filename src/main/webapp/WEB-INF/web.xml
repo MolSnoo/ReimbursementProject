@@ -55,4 +55,94 @@
     <servlet-name>BackServlet</servlet-name>
     <url-pattern>/backtohomepage</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SubmitRequestServlet</servlet-name>
+    <servlet-class>com.revature.SubmitRequestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SubmitRequestServlet</servlet-name>
+    <url-pattern>/submitrequestpage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewPendingServlet</servlet-name>
+    <servlet-class>com.revature.ViewPendingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewPendingServlet</servlet-name>
+    <url-pattern>/viewpendingpage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewResolvedServlet</servlet-name>
+    <servlet-class>com.revature.ViewResolvedServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewResolvedServlet</servlet-name>
+    <url-pattern>/viewresolvedpage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateInfoServlet</servlet-name>
+    <servlet-class>com.revature.UpdateInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateInfoServlet</servlet-name>
+    <url-pattern>/updateinfopage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ApproveDenyServlet</servlet-name>
+    <servlet-class>com.revature.ApproveDenyServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ApproveDenyServlet</servlet-name>
+    <url-pattern>/approvedenypage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewAllPendingServlet</servlet-name>
+    <servlet-class>com.revature.ViewAllPendingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewAllPendingServlet</servlet-name>
+    <url-pattern>/viewallpendingpage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewAllResolvedServlet</servlet-name>
+    <servlet-class>com.revature.ViewAllResolvedServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewAllResolvedServlet</servlet-name>
+    <url-pattern>/viewallresolvedpage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewSpecificServlet</servlet-name>
+    <servlet-class>com.revature.ViewSpecificServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewSpecificServlet</servlet-name>
+    <url-pattern>/viewspecific</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewEmployeesServlet</servlet-name>
+    <servlet-class>com.revature.ViewEmployeesServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewEmployeesServlet</servlet-name>
+    <url-pattern>/viewemployeesc</url-pattern>
+  </servlet-mapping>
 </web-app>
