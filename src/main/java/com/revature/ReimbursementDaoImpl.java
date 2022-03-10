@@ -1,6 +1,9 @@
 package com.revature;
 
 import jakarta.persistence.TypedQuery;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -34,6 +37,32 @@ public class ReimbursementDaoImpl implements ReimbursementDao {
         session.merge(reimbursement);
         t.commit();
         session.close();
+    }
+
+    @Override
+    public void deleteReimbursement(Reimbursement reimbursement) {
+        Session session = factory.openSession();
+        Transaction t = session.beginTransaction();
+        session.delete(reimbursement);
+        t.commit();
+        session.close();
+    }
+
+    @Override
+    public Reimbursement getReimbursement(int id) {
+        Session session = factory.openSession();
+
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<Reimbursement> cq = cb.createQuery(Reimbursement.class);
+        Root<Reimbursement> root = cq.from(Reimbursement.class);
+        cq.select(root).where(cb.equal(root.get("id"), id));
+
+        List <Reimbursement> results = session.createQuery(cq).getResultList();
+        session.close();
+
+        if (results.size() > 0)
+            return results.get(0);
+        return null;
     }
 
     @Override

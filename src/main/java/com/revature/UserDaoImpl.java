@@ -6,6 +6,7 @@ import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import java.util.List;
@@ -20,6 +21,14 @@ public class UserDaoImpl implements UserDao {
         this.factory = config.buildSessionFactory();
     }
 
+    @Override
+    public void updateUser(User user) {
+        Session session = factory.openSession();
+        Transaction t = session.beginTransaction();
+        session.merge(user);
+        t.commit();
+        session.close();
+    }
 
     @Override
     public User login(String email, String password) {
@@ -57,5 +66,20 @@ public class UserDaoImpl implements UserDao {
         if (results.size() > 0)
             return results.get(0);
         return null;
+    }
+
+    @Override
+    public List<User> getEmployees() {
+        Session session = factory.openSession();
+
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<User> cq = cb.createQuery(User.class);
+        Root<User> root = cq.from(User.class);
+        cq.select(root).where(cb.equal(root.get("type"), "EMPLOYEE"));
+
+        List<User> results = session.createQuery(cq).getResultList();
+        session.close();
+
+        return results;
     }
 }
