@@ -16,24 +16,24 @@
 </head>
 <body>
   <h1 class="center">Employee Home Page</h1>
-  <form action="submitrequest" method="get" class="center">
-    <input type="button" value="Submit a reimbursement request" class="center">
+  <form action="submitrequestpage.jsp" method="get" class="center">
+    <button class="float-left submit-button" >Submit a reimbursement request</button>
   </form>
   <br><br>
-  <form action="viewpending" method="get" class="center">
-    <input type="button" value="View pending reimbursement requests" class="center">
+  <form action="viewpendingpage.jsp" method="get" class="center">
+    <button class="float-left submit-button" >View pending reimbursement requests</button>
   </form>
   <br><br>
-  <form action="viewresolved" method="get" class="center">
-    <input type="button" value="View resolved reimbursement requests" class="center">
+  <form action="viewresolvedpage.jsp" method="get" class="center">
+    <button class="float-left submit-button" >View resolved reimbursement requests</button>
   </form>
   <br><br>
-  <form action="viewinfo" method="get" class="center">
-    <input type="button" value="View your information" class="center">
+  <form action="viewinfo.jsp" method="get" class="center">
+    <button class="float-left submit-button" >View your information</button>
   </form>
   <br><br>
-  <form action="updateinfo" method="get" class="center">
-    <input type="button" value="Update your information" class="center">
+  <form action="updateinfopage.jsp" method="get" class="center">
+    <button class="float-left submit-button" >Update your information</button>
   </form>
   <br><br>
   <form action="logout" method="get" class="center">

@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
         User user = userDao.login(email, password);
         if (user == null) {
             out.println("<span style=\"color:red\">Email address or password is incorrect.</span>");
-            RequestDispatcher rd = request.getRequestDispatcher("/loginpage.html");
+            RequestDispatcher rd = request.getRequestDispatcher("/loginpage.jsp");
             rd.include(request, response);
         }
         else {

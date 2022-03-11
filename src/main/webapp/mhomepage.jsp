@@ -16,24 +16,24 @@
 </head>
 <body>
     <h1 class="center">Manager Home Page</h1>
-    <form action="approvedeny" method="get" class="center">
-        <input type="button" value="Approve/Deny pending reimbursement requests">
+    <form action="approvedenypage.jsp" method="get" class="center">
+        <button class="float-left submit-button" >Approve/Deny pending reimbursement requests</button>
     </form>
     <br><br>
-    <form action="viewallpending" method="get" class="center">
-        <input type="button" value="View all pending requests of all employees">
+    <form action="viewallpendingpage.jsp" method="get" class="center">
+        <button class="float-left submit-button" >View all pending requests of all employees</button>
     </form>
     <br><br>
-    <form action="viewallresolved" method="get" class="center">
-        <input type="button" value="View all resolved requests of all employees">
+    <form action="viewallresolvedpage.jsp" method="get" class="center">
+        <button class="float-left submit-button" >View all resolved requests of all employees</button>
     </form>
     <br><br>
-    <form action="viewspecific" method="get" class="center">
-        <input type="button" value="View reimbursement requests of a specific employee">
+    <form action="viewspecific.jsp" method="get" class="center">
+        <button class="float-left submit-button" >View reimbursement requests of a specific employee</button>
     </form>
     <br><br>
-    <form action="viewemployees" method="get" class="center">
-        <input type="button" value="View all employees">
+    <form action="viewemployees.jsp" method="get" class="center">
+        <button class="float-left submit-button" >View all employees</button>
     </form>
     <br><br>
     <form action="logout" method="get" class="center">

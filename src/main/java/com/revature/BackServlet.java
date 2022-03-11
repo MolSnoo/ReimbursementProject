@@ -23,16 +23,16 @@ public class BackServlet extends HttpServlet {
         if (session != null) {
             String userType = (String) session.getAttribute("user_type");
             if (userType.equals("EMPLOYEE")) {
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ehomepage.html");
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ehomepage.jsp");
                 dispatcher.forward(request, response);
             }
             else if (userType.equals("MANAGER")) {
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/mhomepage.html");
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/mhomepage.jsp");
                 dispatcher.forward(request, response);
             }
         }
         else {
-            response.sendRedirect(request.getContextPath() + "/loginpage.html");
+            response.sendRedirect(request.getContextPath() + "/loginpage.jsp");
         }
         out.close();
     }
