@@ -28,12 +28,16 @@ public class ViewInfoServlet extends HttpServlet {
         //user = UserDao.getUser(2);
         //for (User user : users) {
             //System.out.println(currentuser);
+            out.println("<table>");
+            out.println("<thead>");
             out.println("<tr>");
             out.println("<th>Id</th>");
             out.println("<th>Name</th>");
             out.println("<th>Email</th>");
             out.println("<th>Employee Type</th>");
             out.println("</tr>");
+            out.println("</thead>");
+            out.println("</tbody>");
             out.println("<tr>");
 //          out.println("<td>" + currentuser.getId() + "</td>");
             out.println("<td>" + userDao.getUser(currentuser.getId()) + "</td>");
@@ -41,6 +45,8 @@ public class ViewInfoServlet extends HttpServlet {
             out.println("<td>" + currentuser.getEmail() + "</td>");
             out.println("<td>" + currentuser.getType() + "</td>");
             out.println("</tr>");
+            out.println("</tbody>");
+            out.println("</table>");
         //}
 
 //        RequestDispatcher tableFooter = request.getRequestDispatcher("/templates/table-footer.jsp");
