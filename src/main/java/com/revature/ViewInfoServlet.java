@@ -34,7 +34,7 @@ public class ViewInfoServlet extends HttpServlet {
         out.println("<th>Employee Type</th>");
         out.println("</tr>");
         out.println("</thead>");
-        out.println("</tbody>");
+        out.println("<tbody>");
         out.println("<tr>");
         out.println("<td>" + currentUser.getId() + "</td>");
         out.println("<td>" + currentUser.getName() + "</td>");

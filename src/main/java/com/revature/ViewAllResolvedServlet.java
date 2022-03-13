@@ -34,7 +34,7 @@ public class ViewAllResolvedServlet extends HttpServlet {
         out.println("<th>Employee Email</th>");
         out.println("</tr>");
         out.println("</thead>");
-        out.println("</tbody>");
+        out.println("<tbody>");
         for (int i = 0; i < reimbursements.size(); i++) {
             out.println("<tr>");
             out.println("<td>" + reimbursements.get(i).getId() + "</td>");
