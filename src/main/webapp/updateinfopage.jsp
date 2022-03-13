@@ -16,9 +16,14 @@
 </head>
 <body>
   <h1 class="center">Update Employee Info Page</h1>
-  <br><br>
-  <form action="updateinfo" method="get" class="center">
-      <input type="text" value="Back to homepage">
+  <form action="updateinfo" method="post" class="center">
+      <p>New Name:</p>
+      <input type="text" name="name">
+      <br><br>
+      <p>New Email:</p>
+      <input type="email" name="email">
+      <br><br>
+      <input type="submit" value="Update Info">
   </form>
   <br><br>
   <form action="backtohomepage" method="get" class="center">

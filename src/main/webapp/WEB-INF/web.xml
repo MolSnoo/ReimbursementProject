@@ -63,7 +63,7 @@
 
   <servlet-mapping>
     <servlet-name>SubmitRequestServlet</servlet-name>
-    <url-pattern>/submitrequestpage</url-pattern>
+    <url-pattern>/submitrequest</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -73,7 +73,7 @@
 
   <servlet-mapping>
     <servlet-name>ViewPendingServlet</servlet-name>
-    <url-pattern>/viewpendingpage</url-pattern>
+    <url-pattern>/viewpending</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -83,7 +83,7 @@
 
   <servlet-mapping>
     <servlet-name>ViewResolvedServlet</servlet-name>
-    <url-pattern>/viewresolvedpage</url-pattern>
+    <url-pattern>/viewresolved</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -93,7 +93,7 @@
 
   <servlet-mapping>
     <servlet-name>UpdateInfoServlet</servlet-name>
-    <url-pattern>/updateinfopage</url-pattern>
+    <url-pattern>/updateinfo</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -103,7 +103,7 @@
 
   <servlet-mapping>
     <servlet-name>ApproveDenyServlet</servlet-name>
-    <url-pattern>/approvedenypage</url-pattern>
+    <url-pattern>/approvedeny</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -113,7 +113,7 @@
 
   <servlet-mapping>
     <servlet-name>ViewAllPendingServlet</servlet-name>
-    <url-pattern>/viewallpendingpage</url-pattern>
+    <url-pattern>/viewallpending</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -123,7 +123,7 @@
 
   <servlet-mapping>
     <servlet-name>ViewAllResolvedServlet</servlet-name>
-    <url-pattern>/viewallresolvedpage</url-pattern>
+    <url-pattern>/viewallresolved</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -143,6 +143,6 @@
 
   <servlet-mapping>
     <servlet-name>ViewEmployeesServlet</servlet-name>
-    <url-pattern>/viewemployeesc</url-pattern>
+    <url-pattern>/viewemployees</url-pattern>
   </servlet-mapping>
 </web-app>

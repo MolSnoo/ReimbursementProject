@@ -32,7 +32,7 @@
     <button class="float-left submit-button" >View your information</button>
   </form>
   <br><br>
-  <form action="updateinfo" method="get" class="center">
+  <form action="updateinfopage.jsp" method="get" class="center">
     <button class="float-left submit-button" >Update your information</button>
   </form>
   <br><br>

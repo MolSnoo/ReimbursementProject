@@ -17,10 +17,10 @@
 <body class="center">
 <h1 class="center">Login Page</h1>
 <form action="login" method="post" class="center">
-    <p>enter email</p>
+    <p>Enter Email:</p>
     <input type="email" name="email">
     <br><br>
-    <p>enter password</p>
+    <p>Enter Password:</p>
     <input type="password" name="password">
     <br><br>
     <input type="submit" value="Login">
