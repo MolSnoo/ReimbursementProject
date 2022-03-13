@@ -16,23 +16,23 @@
 </head>
 <body>
   <h1 class="center">Employee Home Page</h1>
-  <form action="submitrequestpage.jsp" method="get" class="center">
+  <form action="submitrequest" method="get" class="center">
     <button class="float-left submit-button" >Submit a reimbursement request</button>
   </form>
   <br><br>
-  <form action="viewpendingpage.jsp" method="get" class="center">
+  <form action="viewpending" method="get" class="center">
     <button class="float-left submit-button" >View pending reimbursement requests</button>
   </form>
   <br><br>
-  <form action="viewresolvedpage.jsp" method="get" class="center">
+  <form action="viewresolved" method="get" class="center">
     <button class="float-left submit-button" >View resolved reimbursement requests</button>
   </form>
   <br><br>
-  <form action="viewinfo.jsp" method="get" class="center">
+  <form action="viewinfo" method="get" class="center">
     <button class="float-left submit-button" >View your information</button>
   </form>
   <br><br>
-  <form action="updateinfopage.jsp" method="get" class="center">
+  <form action="updateinfo" method="get" class="center">
     <button class="float-left submit-button" >Update your information</button>
   </form>
   <br><br>
