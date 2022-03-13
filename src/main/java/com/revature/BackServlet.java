@@ -1,6 +1,5 @@
 package com.revature;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -21,15 +20,7 @@ public class BackServlet extends HttpServlet {
 
         HttpSession session = request.getSession(false);
         if (session != null) {
-            String userType = (String) session.getAttribute("user_type");
-            if (userType.equals("EMPLOYEE")) {
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ehomepage.jsp");
-                dispatcher.forward(request, response);
-            }
-            else if (userType.equals("MANAGER")) {
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/mhomepage.jsp");
-                dispatcher.forward(request, response);
-            }
+            response.sendRedirect(request.getContextPath());
         }
         else {
             response.sendRedirect(request.getContextPath() + "/loginpage.jsp");
