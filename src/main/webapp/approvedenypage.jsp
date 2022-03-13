@@ -15,11 +15,22 @@
     </style>
 </head>
 <body>
-  <h1 class="center">Approve/Deny Reimbursement Request Page</h1>
-  <br><br>
-  <br><br>
-  <form action="backtohomepage" method="get" class="center">
-      <input type="submit" value="Back to homepage">
-  </form>
+    <h1 class="center">Approve/Deny Reimbursement Request Page</h1>
+    <form action="approvedeny" method="post" class="center">
+        <p>Enter Reimbursement Request Id:</p>
+        <input type="number" name="id">
+        <br><br>
+        <p>Select Action:</p>
+        <select name="action">
+            <option value="APPROVE">Approve</option>
+            <option value="REJECT">Reject</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+    <br><br>
+    <form action="backtohomepage" method="get" class="center">
+        <input type="submit" value="Back to homepage">
+    </form>
 </body>
 </html>
