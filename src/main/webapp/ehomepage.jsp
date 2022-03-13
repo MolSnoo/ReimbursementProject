@@ -16,7 +16,7 @@
 </head>
 <body>
   <h1 class="center">Employee Home Page</h1>
-  <form action="submitrequest" method="get" class="center">
+  <form action="submitrequestpage.jsp" method="get" class="center">
     <button class="float-left submit-button" >Submit a reimbursement request</button>
   </form>
   <br><br>

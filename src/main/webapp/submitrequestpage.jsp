@@ -16,10 +16,12 @@
 </head>
 <body>
   <h1 class="center">Submit Reimbursement Request Page</h1>
-  <br><br>
-  <form action="submitreimbursementrequest" method="get" class="center">
-      <input type="text" value="Back to homepage">
-  </form>
+  <form action="submitrequest" method="post" class="center">
+        <p>Enter Reimbursement Amount:</p>
+        <input type="number" name="amount">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
   <br><br>
   <form action="backtohomepage" method="get" class="center">
       <input type="submit" value="Back to homepage">
