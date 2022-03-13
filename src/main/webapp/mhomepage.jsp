@@ -28,11 +28,11 @@
         <button class="float-left submit-button" >View all resolved requests of all employees</button>
     </form>
     <br><br>
-    <form action="viewspecific.jsp" method="get" class="center">
+    <form action="viewspecificpage.jsp" method="get" class="center">
         <button class="float-left submit-button" >View reimbursement requests of a specific employee</button>
     </form>
     <br><br>
-    <form action="viewemployees.jsp" method="get" class="center">
+    <form action="viewemployees" method="get" class="center">
         <button class="float-left submit-button" >View all employees</button>
     </form>
     <br><br>

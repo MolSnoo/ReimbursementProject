@@ -27,22 +27,22 @@ public class ViewAllResolvedServlet extends HttpServlet {
         out.println("<thead>");
         out.println("<tr>");
         out.println("<th>Id</th>");
-        out.println("<th>User Name</th>");
-        out.println("<th>User Email</th>");
-        out.println("<th>User Type</th>");
         out.println("<th>Amount</th>");
         out.println("<th>Status</th>");
+        out.println("<th>Employee Id</th>");
+        out.println("<th>Employee Name</th>");
+        out.println("<th>Employee Email</th>");
         out.println("</tr>");
         out.println("</thead>");
         out.println("</tbody>");
         for (int i = 0; i < reimbursements.size(); i++) {
             out.println("<tr>");
             out.println("<td>" + reimbursements.get(i).getId() + "</td>");
-            out.println("<td>" + reimbursements.get(i).getUser().getName() + "</td>");
-            out.println("<td>" + reimbursements.get(i).getUser().getEmail() + "</td>");
-            out.println("<td>" + reimbursements.get(i).getUser().getType() + "</td>");
             out.println("<td>" + reimbursements.get(i).getAmount() + "</td>");
             out.println("<td>APPROVED</td>");
+            out.println("<td>" + reimbursements.get(i).getUser().getId() + "</td>");
+            out.println("<td>" + reimbursements.get(i).getUser().getName() + "</td>");
+            out.println("<td>" + reimbursements.get(i).getUser().getEmail() + "</td>");
             out.println("</tr>");
         }
         out.println("</tbody>");
