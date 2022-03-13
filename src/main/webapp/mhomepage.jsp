@@ -20,11 +20,11 @@
         <button class="float-left submit-button" >Approve/Deny pending reimbursement requests</button>
     </form>
     <br><br>
-    <form action="viewallpendingpage.jsp" method="get" class="center">
+    <form action="viewallpending" method="get" class="center">
         <button class="float-left submit-button" >View all pending requests of all employees</button>
     </form>
     <br><br>
-    <form action="viewallresolvedpage.jsp" method="get" class="center">
+    <form action="viewallresolved" method="get" class="center">
         <button class="float-left submit-button" >View all resolved requests of all employees</button>
     </form>
     <br><br>
