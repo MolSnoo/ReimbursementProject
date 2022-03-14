@@ -12,6 +12,18 @@
         body {
         font-family: 'Fira Mono', monospace;
         }
+        table, th, td {
+            border: 1px solid black;
+             padding: 4px;
+             border-collapse: separate;
+              border-spacing: 1px;
+              border-radius: 1px;
+             margin-left:auto;
+             margin-right:auto;
+            }
+         tr:nth-child(odd) {background-color: #e4f5f4;}
+         tr:nth-child(even) {background-color: #c8e6e4;}
+
     </style>
 </head>
 <body>

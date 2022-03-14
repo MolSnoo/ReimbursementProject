@@ -2,15 +2,17 @@
 
 body { background-color: #F5EFDF; }
 
-table {
-	margin-left: auto;
-	margin-right: auto;
-	border-style: ridge;
-	border-spacing: 5px;
-	border-width: 3px;
-	border-radius: 2px;
-	border-color: #12921E;
-}
+        table, th, td {
+            border: 1px solid black;
+             padding: 5px;
+             border-collapse: separate;
+              border-spacing: 1px;
+              border-radius: 1px;
+             margin-left:auto;
+             margin-right:auto;
+            }
+         tr:nth-child(odd) {background-color: #fafdff;}
+         tr:nth-child(even) {background-color: #dae6ed;}
 
 a:hover {background: #2d2c7d; color: white}
 	
